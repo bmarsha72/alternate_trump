@@ -1,6 +1,10 @@
-var clipsSelected = {}
-//object that holds the selected clips
+
 $(document).ready(function(){
+
+  var clipsSelected = {}
+  //object that holds the selected clips
+
+
 //selected clips will go inside the onload
   $('#noun1').change(function(){
     console.log('noun1 is working')
@@ -27,7 +31,7 @@ $(document).ready(function(){
     $('#execute').removeAttr('disabled');
   });
 
-});//end of document ready function
+
 
 //to check to make sure there are four (or more?)
 //selection if done out of order:
@@ -50,12 +54,19 @@ function checkLength(obj){
 //assemble the runPlayer once the play order is determined.
 function runPlayer(){
 
-  var one   = 'audio/IloveMexicoIloveChina.mp3'
-  var two   = 'audio/Imleadingineverypollwith.mp3'
-  var three = 'audio/yourmother.mp3'
-  var four  = 'audio/sixteenofwhichwereshootingatme.mp3'
-  var five  = 'audio/theylovemeIlovethem.mp3'
-  var six   = 'audio/TheWall3.mp3'
+  var one       = 'audio/HitMeHardWithTheWomenCardThatsEnough.mp3'
+  var two       = 'audio/Igohomeandmywifesaid.mp3'
+  var three     = ''
+  var four      = ''
+  var five      = ''
+  var six       = ''
+  var seven     = ''
+  var eight     = ''
+  var nine      = ''
+  var ten       = ''
+  var eleven    = ''
+  var twelve    = ''
+  var thirteen  = ''
 
   var audio1 = document.createElement('audio');
   audio1.src = one;
@@ -75,6 +86,10 @@ function runPlayer(){
   var audio6 = document.createElement('audio');
   audio6.src = six;
 
+
+
+
+
   audio6.play()//plays sixth clip
   });//end audio5 event listener
   audio5.play()//plays fifth clip
@@ -88,3 +103,4 @@ function runPlayer(){
   audio1.play();//plays the first clip
 
 }//end of runPlayer
+});//end of document ready function
