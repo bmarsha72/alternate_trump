@@ -56,23 +56,23 @@ function runPlayer(){
 
   var one       = 'audio/HitMeHardWithTheWomenCardThatsEnough.mp3'
   var two       = 'audio/Igohomeandmywifesaid.mp3'
-  var three     = ''
-  var four      = ''
-  var five      = ''
-  var six       = ''
-  var seven     = ''
-  var eight     = ''
-  var nine      = ''
-  var ten       = ''
-  var eleven    = ''
-  var twelve    = ''
-  var thirteen  = ''
+  var three     = 'audio/WAT.mp3'
+  var four      = 'audio/nobodyrespectswomentmorethandonaldtrump.mp3'
+  var five      = 'audio/soweregoingtostraightenout.mp3'
+  var six       = 'audio/theylovemeIlovethem.mp3'
+  var seven     = 'audio/WAT.mp3'
+  var eight     = 'audio/IvyLeagueBetterWordThan.mp3'
+  var nine      = 'audio/ImeanIlookatthisguy.mp3'
+  var ten       = 'audio/hesalowenergy...weneedlotsof.mp3'
+  var eleven    = 'audio/WAT.mp3'
+  var twelve    = 'audio/AnchorBaby.mp3'
+  var thirteen  = 'audio/itstoolong..whowantstowatchfiftyhoursofthisstuffright.mp3'
 
   var audio1 = document.createElement('audio');
   audio1.src = one;
   audio1.addEventListener('ended', function(){
   var audio2 = document.createElement('audio');
-  audio2.src = noun1;
+  audio2.src = two;
   audio2.addEventListener('ended', function(){
   var audio3 = document.createElement('audio');
   audio3.src = three;
@@ -85,6 +85,17 @@ function runPlayer(){
   audio5.addEventListener('ended', function(){
   var audio6 = document.createElement('audio');
   audio6.src = six;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
