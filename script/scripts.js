@@ -1,36 +1,33 @@
-  var clipsSelected = {}
+//things to do when page loads:
 $(document).ready(function(){
 
 
-
-
-  console.log(JSON.stringify(clipsSelected));
   //object that holds the selected clips
+  var clipsSelected = {}
 
-  //things to do when page loads:
 
-
-  $('#statement').select(function(){
+  $('#statement').change(function(){
     console.log('statement is working')
     clipsSelected.statement = $(this, ':selected').val();
   });//end of #statement onchange push to clipsSelected object
 
-  $('#noun1').select(function(){
+  $('#noun1').change(function(){
     console.log('noun1 is working')
     clipsSelected.noun1 = $(this, ':selected').val();
+    console.log(clipsSelected.noun1)
   });//end of #noun1 onchange push to clipsSelected object
 
-  $('#noun2').select(function(){
+  $('#noun2').change(function(){
     console.log('noun2 is working')
     clipsSelected.noun2 = $(this, ':selected').val();
   });//end of #noun2 onchange push to clipsSelected object
 
-  $('#person').select(function(){
+  $('#person').change(function(){
     console.log('person is working')
     clipsSelected.person = $(this, ':selected').val();
   });//end of #person onchange push to clipsSelected object
 
-  $('#noun3').select(function(){
+  $('#noun3').change(function(){
     console.log('noun3 is working')
     clipsSelected.noun3 = $(this, ':selected').val();
   });//end of #noun3 onchange push to clipsSelected object
