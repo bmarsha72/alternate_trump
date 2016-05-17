@@ -37,7 +37,7 @@ $(document).ready(function(){
 $('#execute').click(function(){
   $('#execute').attr('disabled','true');
   runPlayer(clipsSelected);
-  $('#execute').removeAttr('disabled');
+
 });
 
 
@@ -132,45 +132,46 @@ function runPlayer(randomName){
 
                                     var audio18 = document.createElement('audio');
                                     audio18.src = 'audio/itstoolongwhowantstowatchfiftyhoursofthisstuffright.mp3';
+                                    audio18.addEventListener('ended', function(){
+                                      $('#execute').removeAttr('disabled');
+                                    })
+
                                     audio18.play()
-
-  })//end audio17 event listener
-  audio17.play()
-  })//end audio16 event listener
-  audio16.play()
-  })//end audio15 event listener
-  audio15.play()
-  })//end audio14 event listener
-  audio14.play()
-  })//end audio13 event listener
-  audio13.play()
-  });//end audio12 event listener
-  audio12.play()
-  });//end audio11 event listener
-  audio11.play()
-  });//end audio10 event listener
-  audio10.play()
-  });//end audio9 event listener
-  audio9.play()
-  });//end audio8 event listener
-  audio8.play()
-  });//end audio7 event listener
-  audio7.play()
-  });//end audio6 event listener
-  audio6.play()//plays sixth clip
-  });//end audio5 event listener
-  audio5.play()//plays fifth clip
-  });//end audio4 event listener
-  audio4.play();//plays fourth clip
-  });//end audio3 event listener
-  audio3.play();//plays third clip
-  });//end of audio2 event listener
-  audio2.play();//plays second clip
+                                  })//end audio17 event listener
+                                  audio17.play()
+                                })//end audio16 event listener
+                                audio16.play()
+                              })//end audio15 event listener
+                              audio15.play()
+                            })//end audio14 event listener
+                            audio14.play()
+                          })//end audio13 event listener
+                          audio13.play()
+                        });//end audio12 event listener
+                        audio12.play()
+                      });//end audio11 event listener
+                      audio11.play()
+                    });//end audio10 event listener
+                    audio10.play()
+                  });//end audio9 event listener
+                  audio9.play()
+                });//end audio8 event listener
+                audio8.play()
+              });//end audio7 event listener
+              audio7.play()
+            });//end audio6 event listener
+            audio6.play()
+          });//end audio5 event listener
+          audio5.play()
+        });//end audio4 event listener
+        audio4.play();
+      });//end audio3 event listener
+      audio3.play();//plays third audio event, etc.
+    });//end of audio2 event listener
+    audio2.play();//plays second audio event
   });//end of audio1 event listener
-  audio1.play();//plays the first clip
-
+  audio1.play();//plays the first audio event
 };//end of runPlayer
-
 
 
 });//end of document ready function
