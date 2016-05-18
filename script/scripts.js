@@ -10,24 +10,28 @@ $(document).ready(function(){
     console.log('statement is working')
     clipsSelected.statement = $(':selected', this).val();
     console.log(clipsSelected.statement)
+    console.log($(':selected', this).val())
   });//end of #statement onchange push to clipsSelected object
 
   $('#noun1').change(function(){
     console.log('noun1 is working')
     clipsSelected.noun1 = $(':selected', this).val();
     console.log(clipsSelected.noun1)
+    console.log($(':selected', this).val())
   });//end of #noun1 onchange push to clipsSelected object
 
   $('#noun2').change(function(){
     console.log('noun2 is working')
     clipsSelected.noun2 = $(':selected', this).val();
     console.log(clipsSelected.noun2)
+    console.log($(':selected', this).val())
   });//end of #noun2 onchange push to clipsSelected object
 
   $('#person').change(function(){
     console.log('person is working')
     clipsSelected.person = $(':selected', this).val();
     console.log(clipsSelected.person)
+    console.log($(':selected', this).val())
   });//end of #person onchange push to clipsSelected object
 
   $('#noun3').change(function(){
@@ -41,7 +45,7 @@ $(document).ready(function(){
 //button to launch the player and checkLength function:
 $('#execute').click(function(e){
   e.stopPropagation()
-  checkLength(clipsSelected);
+  runPlayer(clipsSelected);
 
 });
 
@@ -88,7 +92,7 @@ function runPlayer(randomName){
           audio5.addEventListener('ended', function(){
 
             var audio6 = document.createElement('audio');
-            audio6.src = 'audio/soweregoingtostraightenout.mp3';
+            audio6.src = 'audio/IwentToTheWhartonSchoolOfFinance.mp3';
             audio6.addEventListener('ended', function(){
 
               var audio7 = document.createElement('audio');
