@@ -8,35 +8,40 @@ $(document).ready(function(){
 
   $('#statement').change(function(){
     console.log('statement is working')
-    clipsSelected.statement = $(this, ':selected').val();
+    clipsSelected.statement = $(':selected', this).val();
+    console.log(clipsSelected.statement)
   });//end of #statement onchange push to clipsSelected object
 
   $('#noun1').change(function(){
     console.log('noun1 is working')
-    clipsSelected.noun1 = $(this, ':selected').val();
+    clipsSelected.noun1 = $(':selected', this).val();
     console.log(clipsSelected.noun1)
   });//end of #noun1 onchange push to clipsSelected object
 
   $('#noun2').change(function(){
     console.log('noun2 is working')
-    clipsSelected.noun2 = $(this, ':selected').val();
+    clipsSelected.noun2 = $(':selected', this).val();
+    console.log(clipsSelected.noun2)
   });//end of #noun2 onchange push to clipsSelected object
 
   $('#person').change(function(){
     console.log('person is working')
-    clipsSelected.person = $(this, ':selected').val();
+    clipsSelected.person = $(':selected', this).val();
+    console.log(clipsSelected.person)
   });//end of #person onchange push to clipsSelected object
 
   $('#noun3').change(function(){
     console.log('noun3 is working')
-    clipsSelected.noun3 = $(this, ':selected').val();
+    clipsSelected.noun3 = $(':selected', this).val();
+    console.log(clipsSelected.noun3)
+    console.log($(':selected', this).val())
   });//end of #noun3 onchange push to clipsSelected object
 
 
 //button to launch the player and checkLength function:
-$('#execute').click(function(){
-  $('#execute').attr('disabled','true');
-  runPlayer(clipsSelected);
+$('#execute').click(function(e){
+  e.stopPropagation()
+  checkLength(clipsSelected);
 
 });
 
@@ -132,9 +137,7 @@ function runPlayer(randomName){
 
                                     var audio18 = document.createElement('audio');
                                     audio18.src = 'audio/itstoolongwhowantstowatchfiftyhoursofthisstuffright.mp3';
-                                    audio18.addEventListener('ended', function(){
-                                      $('#execute').removeAttr('disabled');
-                                    })
+
 
                                     audio18.play()
                                   })//end audio17 event listener
