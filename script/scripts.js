@@ -92,7 +92,7 @@ function runPlayer(randomName){
           audio5.addEventListener('ended', function(){
 
             var audio6 = document.createElement('audio');
-            audio6.src = 'audio/IwentToTheWhartonSchoolOfFinance.mp3';
+            audio6.src = 'audio/soweregoingtostraightenout.mp3';
             audio6.addEventListener('ended', function(){
 
               var audio7 = document.createElement('audio');
